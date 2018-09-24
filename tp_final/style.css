@@ -290,3 +290,48 @@ footer h1
     text-decoration: none;
     color: #760001;
 }
+
+
+/*
+header
+.banniere_image
+section > article
+aside
+footer
+*/
+
+@media only screen and (max-width: 350px) {
+    #bloc_page{
+        width: 310px;
+    }
+    header{
+        display: none;
+    }
+    section{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer div{
+        width: 33%;
+    }
+    #listes_amis{
+        flex-direction: column;
+    }
+    #listes_amis ul{
+       width: 100px;
+    }
+    #tweet{
+        order: 3;
+    }
+    #mes_photos{
+        order: 2;
+    }
+    #banniere_description{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
