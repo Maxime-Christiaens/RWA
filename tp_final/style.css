@@ -302,20 +302,30 @@ footer
 
 @media only screen and (max-width: 350px) {
     #bloc_page{
-        width: 310px;
+        width: 95%;
     }
     header{
-        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul{
+        flex-direction: column;
+        
+    }
+    nav li{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
     }
     section{
         flex-direction: column;
+
     }
     footer{
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    footer div{
-        width: 33%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     #listes_amis{
         flex-direction: column;
@@ -324,10 +334,10 @@ footer
        width: 100px;
     }
     #tweet{
-        order: 3;
+        text-align: center;
     }
     #mes_photos{
-        order: 2;
+        text-align: center;
     }
     #banniere_description{
         display: flex;
@@ -335,3 +345,19 @@ footer
     }
 }
 
+@media only screen and (min-width: 351px) and (max-width: 768px) {
+    section{
+        flex-direction: column;
+    }
+    #bloc_page{
+        width: 95%;
+    }
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    header{
+        flex-direction: column;
+        align-items: center;
+    }
+}
