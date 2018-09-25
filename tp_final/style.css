@@ -327,17 +327,24 @@ footer
         justify-content: center;
         align-items: center;
     }
+    #mes_amis{
+        width: 100%;
+        text-align: center;
+    }
     #listes_amis{
         flex-direction: column;
+
     }
     #listes_amis ul{
-       width: 100px;
+       width: 100%;
     }
     #tweet{
         text-align: center;
+        width: 100%;
     }
     #mes_photos{
         text-align: center;
+        width: 100%;
     }
     #banniere_description{
         display: flex;
